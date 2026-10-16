@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       sveltekit({
         adapter: adapter({
-          envPrefix: "APP_",
+          envPrefix: "SVELTEKIT_",
           serverOptions: {
             port: port,
           },
