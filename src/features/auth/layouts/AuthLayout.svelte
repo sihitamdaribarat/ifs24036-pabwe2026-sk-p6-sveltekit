@@ -11,12 +11,12 @@
 
 <AuthSessionRedirect />
 
-<div class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50/40 to-slate-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+<main class="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50/40 to-slate-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
   <div class="sm:mx-auto sm:w-full sm:max-w-md text-center px-4">
     <div class="inline-flex w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-600 to-cyan-500 items-center justify-center text-white shadow-xl shadow-indigo-500/25 mb-3">
       <GraduationCap size={32} strokeWidth={2.5} />
     </div>
-    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Delcom Courses</h2>
+    <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Delcom Courses</h1>
     <p data-testid="auth-tagline" class="mt-2 text-sm text-slate-500 leading-relaxed">
       Platform kursus daring untuk membuat kelas, mendaftar sebagai peserta, belajar lewat
       materi video YouTube, dan memberi rating pada setiap kursus.
@@ -25,7 +25,7 @@
 
   <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
     <div class="bg-white py-8 px-6 sm:px-10 shadow-xl shadow-slate-200/50 rounded-3xl border border-slate-100">
-      <div class="flex rounded-2xl bg-slate-100 p-1 mb-6">
+      <nav aria-label="Navigasi Autentikasi" class="flex rounded-2xl bg-slate-100 p-1 mb-6">
         <a
           href="/auth/login"
           data-testid="tab-login"
@@ -44,9 +44,9 @@
         >
           Daftar Baru
         </a>
-      </div>
+      </nav>
 
       {@render children()}
     </div>
   </div>
-</div>
+</main>

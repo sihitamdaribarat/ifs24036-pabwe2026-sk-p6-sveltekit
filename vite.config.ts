@@ -13,11 +13,13 @@ export default defineConfig(({ mode }) => {
     plugins: [
       sveltekit({
         adapter: adapter({
+          precompress: true,
           envPrefix: "SVELTEKIT_",
           serverOptions: {
             port: port,
           },
         }),
+        inlineStyleThreshold: Infinity,
       }),
       tailwindcss(),
       svelteTesting(),

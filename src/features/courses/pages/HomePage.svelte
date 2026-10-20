@@ -105,7 +105,7 @@
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
         <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Total Kursus</p>
-        <h3 data-testid="stat-total" class="text-3xl font-black text-slate-800 mt-1">{courses.length}</h3>
+        <p data-testid="stat-total" class="text-3xl font-black text-slate-800 mt-1">{courses.length}</p>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
         <GraduationCap size={26} strokeWidth={2} />
@@ -115,7 +115,7 @@
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
         <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Milik Saya</p>
-        <h3 data-testid="stat-mine" class="text-3xl font-black text-amber-600 mt-1">{myCount}</h3>
+        <p data-testid="stat-mine" class="text-3xl font-black text-amber-600 mt-1">{myCount}</p>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center">
         <Crown size={26} strokeWidth={2} />
@@ -125,7 +125,7 @@
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
         <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Diikuti</p>
-        <h3 data-testid="stat-joined" class="text-3xl font-black text-emerald-600 mt-1">{joinedCount}</h3>
+        <p data-testid="stat-joined" class="text-3xl font-black text-emerald-600 mt-1">{joinedCount}</p>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
         <BookOpenCheck size={26} strokeWidth={2} />
@@ -217,7 +217,7 @@
 
               <div class="flex-1 flex flex-col p-5 gap-3">
                 <div>
-                  <h3 class="font-bold text-slate-900 leading-snug line-clamp-2">{course.title}</h3>
+                  <h2 class="font-bold text-slate-900 leading-snug line-clamp-2">{course.title}</h2>
                   {#if course.description}
                     <p class="text-sm text-slate-500 mt-1 line-clamp-2">{course.description}</p>
                   {/if}
