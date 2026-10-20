@@ -174,21 +174,21 @@
       <div class="p-6 sm:p-8 space-y-6">
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div class="rounded-2xl bg-indigo-50/70 p-4">
-            <p class="text-[11px] font-bold uppercase tracking-wider text-indigo-500">Materi</p>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-indigo-700">Materi</p>
             <p data-testid="stat-contents" class="text-2xl font-black text-indigo-700 mt-1">{contents.length}</p>
           </div>
           <div class="rounded-2xl bg-slate-100/80 p-4">
-            <p class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Peserta</p>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-slate-700">Peserta</p>
             <p data-testid="stat-students" class="text-2xl font-black text-slate-700 mt-1">{(course.students ?? []).length}</p>
           </div>
           <div class="rounded-2xl bg-amber-50/80 p-4">
-            <p class="text-[11px] font-bold uppercase tracking-wider text-amber-600">Rata-rata Rating</p>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-amber-800">Rata-rata Rating</p>
             <p data-testid="stat-rating" class="text-2xl font-black text-amber-600 mt-1 flex items-center gap-1">
               <Star size={18} /> {formatRating(course.avg_ratings)}
             </p>
           </div>
           <div class="rounded-2xl bg-emerald-50/80 p-4">
-            <p class="text-[11px] font-bold uppercase tracking-wider text-emerald-600">Ulasan</p>
+            <p class="text-[11px] font-bold uppercase tracking-wider text-emerald-800">Ulasan</p>
             <p class="text-2xl font-black text-emerald-700 mt-1">{ratings.length}</p>
           </div>
         </div>
@@ -201,7 +201,7 @@
           {/if}
         </div>
 
-        <div class="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-400">
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-600">
           <span class="flex items-center gap-1.5"><Calendar size={14} /> Dibuat: <strong class="text-slate-500">{formatDate(course.created_at)}</strong></span>
           <span class="flex items-center gap-1.5"><Calendar size={14} /> Diperbarui: <strong class="text-slate-500">{formatDate(course.updated_at)}</strong></span>
         </div>
@@ -451,7 +451,7 @@
       </div>
 
       {#if ratings.length === 0}
-        <p data-testid="empty-ratings" class="text-sm text-slate-400 italic">Belum ada rating untuk kursus ini.</p>
+        <p data-testid="empty-ratings" class="text-sm text-slate-600 italic">Belum ada rating untuk kursus ini.</p>
       {:else}
         <ul class="space-y-3">
           {#each ratings as rating, index (index)}

@@ -83,7 +83,7 @@
         data-testid="delete-all-btn"
         onclick={handleDeleteAll}
         disabled={$coursesStore.isCourseMutating}
-        class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-semibold text-sm text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 transition-all disabled:opacity-60"
+        class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-semibold text-sm text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-all disabled:opacity-60"
         title="Hapus semua kursus milik saya"
       >
         <Trash2 size={16} />
@@ -104,7 +104,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Kursus</p>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Total Kursus</p>
         <h3 data-testid="stat-total" class="text-3xl font-black text-slate-800 mt-1">{courses.length}</h3>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
@@ -114,7 +114,7 @@
 
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Milik Saya</p>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Milik Saya</p>
         <h3 data-testid="stat-mine" class="text-3xl font-black text-amber-600 mt-1">{myCount}</h3>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center">
@@ -124,7 +124,7 @@
 
     <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Diikuti</p>
+        <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">Diikuti</p>
         <h3 data-testid="stat-joined" class="text-3xl font-black text-emerald-600 mt-1">{joinedCount}</h3>
       </div>
       <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
@@ -208,7 +208,7 @@
                     </span>
                   {/if}
                   {#if student}
-                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500 text-white shadow-sm">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-700 text-white shadow-sm">
                       <BookOpenCheck size={12} /> Diikuti
                     </span>
                   {/if}

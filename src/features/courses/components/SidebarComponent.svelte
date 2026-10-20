@@ -46,7 +46,7 @@
   >
     <div class="flex flex-col h-full justify-between">
       <div>
-        <p class="px-3 text-xs font-bold uppercase tracking-wider text-slate-400">Menu Utama</p>
+        <p class="px-3 text-xs font-bold uppercase tracking-wider text-slate-600">Menu Utama</p>
         <nav class="mt-3 space-y-1">
           {#each navItems as item (item.to)}
             {@const active = isItemActive(item.match, page.url.pathname)}
