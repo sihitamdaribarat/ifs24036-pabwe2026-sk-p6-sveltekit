@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Semua Pengguna - Delcom Courses</title>
+  <meta name="description" content="Lihat daftar seluruh pengguna yang terdaftar di platform Delcom Courses." />
 </svelte:head>
 
 <UsersPage />

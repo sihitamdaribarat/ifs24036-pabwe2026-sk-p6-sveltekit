@@ -7,6 +7,7 @@
 
 <svelte:head>
   <title>Detail Kursus - Delcom Courses</title>
+  <meta name="description" content="Lihat detail kursus, materi pembelajaran, dan ulasan peserta di Delcom Courses." />
 </svelte:head>
 
 <DetailPage {courseId} />

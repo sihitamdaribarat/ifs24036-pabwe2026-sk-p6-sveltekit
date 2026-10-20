@@ -8,6 +8,7 @@
 
 <svelte:head>
   <title>Materi Kursus - Delcom Courses</title>
+  <meta name="description" content="Pelajari materi video kursus di Delcom Courses." />
 </svelte:head>
 
 <ContentPage {courseId} {contentId} />
